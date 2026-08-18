@@ -3,101 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b0b0d">
-<meta name="description" content="كاظم نجم جابر — مصمم جرافيك من البصرة، متخصص بالهوية البصرية والإعلانات واللافتات والتصاميم الرقمية.">
+<meta name="theme-color" content="#11100e">
+<meta name="description" content="كاظم نجم جابر — مصمم جرافيك من البصرة. هوية بصرية، إعلانات، سوشيال ميديا، لافتات وواجهات مضيئة.">
 <title>Kazem Najam Jaber — Graphic Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --bg:#08090b;--panel:#101216;--panel2:#15171c;--text:#f5f5f2;
-  --muted:#a8abb3;--gold:#d8a441;--gold2:#f1c45d;--line:#262a31;
-  --white:#fff;
+  --bg:#0b0a09;
+  --bg2:#12100e;
+  --panel:#171411;
+  --panel2:#1d1915;
+  --orange:#e76f20;
+  --orange2:#ff913d;
+  --cream:#f5eadb;
+  --text:#f7f3ee;
+  --muted:#a9a19a;
+  --line:#302922;
+  --soft:rgba(231,111,32,.12);
 }
 *{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;background:
-radial-gradient(circle at 75% 5%,rgba(216,164,65,.13),transparent 25%),
-radial-gradient(circle at 10% 45%,rgba(216,164,65,.06),transparent 30%),
-var(--bg);color:var(--text);font-family:Cairo,Arial,sans-serif;line-height:1.8}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.container{width:min(1180px,92%);margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(8,9,11,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.navin{height:74px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-family:Inter,sans-serif;font-weight:800;letter-spacing:.5px;font-size:19px}
-.brand span{color:var(--gold2)}
-.links{display:flex;gap:28px;color:#d8d9dd;font-size:14px}
-.links a:hover{color:var(--gold2)}
-.lang{border:1px solid #343840;background:#111319;color:#fff;padding:7px 14px;border-radius:999px;cursor:pointer}
-
-.hero{min-height:calc(100vh - 74px);display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center;padding:75px 0}
-.hero-img{position:relative;display:flex;justify-content:center}
-.hero-img:before{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(216,164,65,.12);filter:blur(45px);z-index:-1}
-.hero-img img{width:min(420px,82vw);aspect-ratio:1;border-radius:50%;object-fit:cover;border:1px solid rgba(216,164,65,.55);box-shadow:0 30px 90px rgba(0,0,0,.5),0 0 0 12px rgba(216,164,65,.04)}
-.kicker{color:var(--gold2);font-size:15px;font-weight:700;margin-bottom:10px}
-h1{font-family:Inter,Cairo,sans-serif;font-size:clamp(46px,7vw,88px);line-height:.98;margin:0 0 22px;letter-spacing:-2px;direction:ltr;text-align:right}
-h1 span{color:var(--gold2)}
-.hero h2{font-size:24px;margin:0 0 16px}
-.hero p{color:var(--muted);font-size:17px;max-width:680px}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
-.btn{padding:12px 22px;border-radius:12px;border:1px solid #363a42;background:#111319;transition:.2s;font-weight:700}
-.btn.primary{background:var(--gold2);color:#101010;border-color:var(--gold2)}
-.btn:hover{transform:translateY(-2px)}
-.contact{display:flex;gap:22px;flex-wrap:wrap;color:#bfc2c9;font-size:14px}
-.contact b{color:#fff}
-
-section{padding:95px 0;border-top:1px solid rgba(255,255,255,.05)}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:34px}
-.section-head h2{font-size:34px;margin:0}
-.section-head .en{font-family:Inter,sans-serif;color:var(--gold2);font-size:12px;letter-spacing:2px}
-.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
-.card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:22px;padding:30px}
-.card p{color:var(--muted);margin:0}
-.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.skill{padding:8px 14px;border:1px solid #353941;border-radius:999px;color:#ddd;background:#111318;font-size:13px}
-
-.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.project{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#0e1014;transition:.25s}
-.project:hover{transform:translateY(-5px);border-color:rgba(216,164,65,.55);box-shadow:0 25px 55px rgba(0,0,0,.28)}
-.project img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#15171b}
-.project-info{padding:20px}
-.project-num{font-family:Inter,sans-serif;color:var(--gold2);font-size:12px;letter-spacing:2px}
-.project h3{margin:6px 0;font-size:19px}
-.project p{margin:0;color:var(--muted);font-size:13px}
-
-.qr-wrap{display:grid;grid-template-columns:1fr 180px;gap:28px;align-items:center}
-.qr{background:#fff;border-radius:16px;padding:12px;width:180px;justify-self:end}
-.qr img{width:100%;aspect-ratio:1;object-fit:contain}
-
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.contact-box{display:flex;flex-direction:column;gap:14px}
-.contact-line{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#101217}
-.icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:rgba(216,164,65,.12);color:var(--gold2)}
-footer{padding:35px 0;color:#777c85;border-top:1px solid var(--line);text-align:center;font-size:13px}
-.gold{color:var(--gold2)}
-
-@media(max-width:850px){
-  .links{display:none}.hero{grid-template-columns:1fr;text-align:center;padding:55px 0;gap:35px}
-  .hero p{margin-inline:auto}.cta,.contact{justify-content:center}h1{text-align:center}
-  .about-grid,.contact-grid{grid-template-columns:1fr}.projects{grid-template-columns:1fr}
-  .qr-wrap{grid-template-columns:1fr;text-align:center}.qr{justify-self:center}
-  .section-head{display:block}.section-head .en{display:block;margin-bottom:6px}
+html{background:var(--bg)}
+body{
+  margin:0;background:
+  radial-gradient(circle at 85% 4%,rgba(231,111,32,.16),transparent 22%),
+  radial-gradient(circle at 8% 25%,rgba(231,111,32,.07),transparent 26%),
+  var(--bg);
+  color:var(--text);font-family:Cairo,Arial,sans-serif;line-height:1.8
 }
-@media(max-width:500px){
-  .navin{height:64px}.brand{font-size:16px}.hero-img img{width:270px}
-  .hero h2{font-size:20px}.hero p{font-size:15px}
-  section{padding:70px 0}.card{padding:22px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+img{display:block;max-width:100%}
+.container{width:min(1180px,92%);margin:auto}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(11,10,9,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:Inter,sans-serif;font-weight:900;letter-spacing:.4px;font-size:18px;direction:ltr}
+.brand span{color:var(--orange2)}
+.links{display:flex;gap:28px;color:#d7d0c9;font-size:14px}
+.links a{transition:.2s}.links a:hover{color:var(--orange2)}
+.lang{border:1px solid #41362e;background:#15120f;color:#fff;padding:7px 14px;border-radius:999px;cursor:pointer}
+
+.hero{min-height:calc(100vh - 74px);display:grid;grid-template-columns:.8fr 1.2fr;gap:75px;align-items:center;padding:80px 0 90px}
+.hero-visual{position:relative;display:flex;justify-content:center}
+.hero-visual:after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:rgba(231,111,32,.13);filter:blur(55px);z-index:-1}
+.hero-visual img{width:min(410px,78vw);aspect-ratio:1;object-fit:cover;border-radius:50%;border:1px solid rgba(255,145,61,.55);box-shadow:0 35px 90px rgba(0,0,0,.5),0 0 0 10px rgba(231,111,32,.045)}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--orange2);font-size:13px;font-weight:800;margin-bottom:15px}
+.eyebrow:before{content:"";width:28px;height:2px;background:var(--orange2)}
+h1{font-family:Inter,Cairo,sans-serif;font-size:clamp(48px,7.2vw,90px);line-height:.94;letter-spacing:-3px;margin:0 0 25px;direction:ltr;text-align:right}
+h1 .orange{color:var(--orange2)}
+.hero h2{font-size:23px;margin:0 0 14px;color:var(--cream)}
+.hero p{color:var(--muted);font-size:16px;max-width:690px}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin:28px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 21px;border-radius:12px;border:1px solid #41362e;background:#15120f;transition:.22s;font-weight:800;font-size:14px;cursor:pointer}
+.btn:hover{transform:translateY(-3px);border-color:var(--orange)}
+.btn.primary{background:var(--orange);border-color:var(--orange);color:#140c07}
+.quick{display:flex;gap:22px;flex-wrap:wrap;color:#bdb5ae;font-size:13px}
+.quick b{color:#fff}
+
+.section{padding:100px 0;border-top:1px solid rgba(255,255,255,.045)}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:35px}
+.section-kicker{font-family:Inter,sans-serif;color:var(--orange2);font-size:11px;font-weight:800;letter-spacing:2.5px;direction:ltr}
+.section h2{font-size:37px;line-height:1.2;margin:5px 0 0}
+.counter{font-family:Inter,sans-serif;color:#6f675f;font-size:12px;direction:ltr}
+
+.about{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:24px;padding:30px}
+.card p{color:var(--muted);margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.tag{padding:8px 13px;border:1px solid #3a3028;border-radius:999px;background:#14110f;color:#ddd3ca;font-size:12px}
+.tag strong{color:var(--orange2)}
+
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.service{padding:25px 21px;border:1px solid var(--line);border-radius:20px;background:#11100e;transition:.2s}
+.service:hover{border-color:#70421f;transform:translateY(-4px)}
+.service .num{font-family:Inter,sans-serif;color:var(--orange2);font-size:12px}
+.service h3{font-size:17px;margin:12px 0 5px}
+.service p{font-size:12px;color:var(--muted);margin:0}
+
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filter{border:1px solid var(--line);background:#11100e;color:#bbb2aa;border-radius:999px;padding:7px 13px;cursor:pointer;font-size:12px}
+.filter.active{background:var(--orange);color:#160c06;border-color:var(--orange);font-weight:800}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.project{overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#100f0d;transition:.25s;cursor:pointer}
+.project:hover{transform:translateY(-5px);border-color:rgba(231,111,32,.6);box-shadow:0 25px 70px rgba(0,0,0,.28)}
+.project.hide{display:none}
+.project-img{position:relative;overflow:hidden;background:#171411}
+.project-img img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:.45s}
+.project:hover .project-img img{transform:scale(1.035)}
+.project-img:after{content:"VIEW";position:absolute;left:15px;bottom:15px;padding:6px 9px;border-radius:7px;background:rgba(0,0,0,.72);color:#fff;font:800 9px Inter;letter-spacing:1.5px;opacity:0;transition:.2s}
+.project:hover .project-img:after{opacity:1}
+.project-info{padding:20px 21px 22px}
+.project-meta{display:flex;justify-content:space-between;gap:10px;color:#777068;font:800 10px Inter;letter-spacing:1.4px}
+.project h3{font-size:19px;margin:7px 0 5px}
+.project p{margin:0;color:var(--muted);font-size:12px}
+.project .orange{color:var(--orange2)}
+
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{position:relative;padding:27px 22px;border:1px solid var(--line);border-radius:20px;background:#11100e}
+.step strong{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--soft);color:var(--orange2);font-family:Inter;margin-bottom:16px}
+.step h3{font-size:16px;margin:0 0 5px}.step p{font-size:12px;color:var(--muted);margin:0}
+
+.cv{display:grid;grid-template-columns:1fr 190px;gap:30px;align-items:center}
+.qr{width:190px;background:#fff;padding:12px;border-radius:17px;justify-self:end}
+.qr img{width:100%;aspect-ratio:1;object-fit:contain}
+.cv-points{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}
+.cv-point{border:1px solid var(--line);background:#12100e;border-radius:13px;padding:12px;color:#c7c0b9;font-size:12px}
+.cv-point b{display:block;color:#fff;margin-bottom:2px}
+
+.contact{display:grid;grid-template-columns:1fr .8fr;gap:22px}
+.contact-list{display:grid;gap:11px}
+.contact-line{display:flex;align-items:center;gap:13px;padding:15px 17px;border:1px solid var(--line);border-radius:15px;background:#11100e}
+.icon{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:var(--soft);color:var(--orange2);font-weight:900}
+.contact-line small{color:#777068}.contact-line b{color:#fff}
+
+footer{padding:35px 0;color:#716a64;text-align:center;border-top:1px solid var(--line);font-size:12px}
+footer span{color:var(--orange2)}
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(10px);z-index:100;display:none;align-items:center;justify-content:center;padding:25px}
+.modal.show{display:flex}
+.modal-box{width:min(1050px,96vw);max-height:92vh;overflow:auto;background:#11100e;border:1px solid #46362a;border-radius:22px;padding:15px;position:relative}
+.modal-box img{width:100%;max-height:72vh;object-fit:contain;border-radius:14px;background:#080808}
+.close{position:absolute;top:25px;left:25px;width:38px;height:38px;border-radius:50%;border:1px solid #5a493b;background:#111;color:#fff;cursor:pointer;font-size:18px;z-index:2}
+.modal-title{padding:12px 8px 5px}.modal-title h3{margin:0}.modal-title p{margin:2px 0 0;color:var(--muted);font-size:12px}
+
+@media(max-width:900px){
+  .links{display:none}
+  .hero{grid-template-columns:1fr;text-align:center;gap:45px}
+  .hero p{margin-inline:auto}.actions,.quick{justify-content:center}h1{text-align:center}
+  .about,.contact,.cv{grid-template-columns:1fr}
+  .qr{justify-self:center}.services,.process{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .navin{height:65px}.hero{padding:55px 0 70px}.hero-visual img{width:280px}
+  .hero h2{font-size:19px}.hero p{font-size:14px}
+  .section{padding:70px 0}.section h2{font-size:30px}
+  .projects,.services,.process,.cv-points{grid-template-columns:1fr}
+  .card{padding:22px}
+}
+@media print{
+  nav,.actions,.filters,.modal{display:none!important}
+  body{background:#fff;color:#111}.section{border-color:#ddd}.card,.project,.service,.step{border-color:#ddd;background:#fff}
+  .hero{min-height:auto;padding:35px 0}.hero p,.project p,.service p,.step p{color:#444}
 }
 </style>
 </head>
-<body>
 
+<body>
 <nav>
   <div class="container navin">
     <a class="brand" href="#home">KAZEM <span>NAJAM</span></a>
     <div class="links">
       <a href="#about">عني</a>
+      <a href="#services">الخدمات</a>
       <a href="#work">أعمالي</a>
       <a href="#cv">السيرة</a>
       <a href="#contact">تواصل</a>
@@ -106,128 +167,210 @@ footer{padding:35px 0;color:#777c85;border-top:1px solid var(--line);text-align:
   </div>
 </nav>
 
-<main>
-<section class="hero container" id="home">
-  <div class="hero-img">
-    <img src="profile.png" alt="Kazem Najam Jaber — Graphic Designer">
+<main id="home">
+<section class="hero container">
+  <div class="hero-visual">
+    <img src="profile.png" alt="Kazem Najam Jaber">
   </div>
   <div>
-    <div class="kicker">ملف أعمال شخصي</div>
-    <h1>Kazem <span>Najam</span><br>Jaber</h1>
+    <div class="eyebrow">GRAPHIC DESIGNER • BASRA</div>
+    <h1>Kazem <span class="orange">Najam</span><br>Jaber</h1>
     <h2>مصمم جرافيك — البصرة، العراق</h2>
-    <p>أصمم هويات بصرية وإعلانات ومحتوى للسوشيال ميديا ولافتات وواجهات مضيئة. أركز على تصميم واضح، عملي، وقابل للتنفيذ يترك انطباعاً احترافياً.</p>
-    <div class="cta">
-      <a class="btn primary" href="#work">شاهد أعمالي</a>
+    <p>أحوّل الأفكار إلى هويات وتصاميم إعلانية واضحة وقوية. أعمل على البراندينغ، السوشيال ميديا، المطبوعات، اللافتات المضيئة والواجهات التجارية.</p>
+    <div class="actions">
+      <a class="btn primary" href="#work">استكشف أعمالي ↗</a>
       <a class="btn" href="https://wa.me/9647765059115" target="_blank">واتساب</a>
       <a class="btn" href="tel:+9647765059115">اتصل بي</a>
-      <button class="btn" onclick="window.print()">طباعة / PDF</button>
+      <button class="btn" onclick="window.print()">PDF / طباعة</button>
     </div>
-    <div class="contact">
-      <span>📍 <b>البصرة، العراق</b></span>
+    <div class="quick">
+      <span>📍 <b>Basra, Iraq</b></span>
       <span>📞 <b>07765059115</b></span>
+      <span>✦ <b>Available for projects</b></span>
     </div>
   </div>
 </section>
 
-<section id="about">
+<section class="section" id="about">
 <div class="container">
-  <div class="section-head"><div><div class="en">ABOUT ME</div><h2>نبذة عني</h2></div></div>
-  <div class="about-grid">
+  <div class="section-head"><div><div class="section-kicker">01 / ABOUT</div><h2>أكثر من مجرد تصميم.</h2></div></div>
+  <div class="about">
     <div class="card">
-      <p>أنا كاظم نجم جابر، مصمم جرافيك من البصرة. أعمل في تصميم الهوية البصرية، الإعلانات، البوسترات، تصاميم السوشيال ميديا، اللافتات المضيئة والواجهات التجارية. هدفي تحويل فكرة العميل إلى تصميم قوي وواضح ويخدم المشروع فعلياً.</p>
+      <p>أنا كاظم نجم جابر، مصمم جرافيك من البصرة. أهتم بأن يكون التصميم جميلًا ومفيدًا بنفس الوقت؛ من أول فكرة الهوية إلى الإعلان النهائي الجاهز للطباعة أو النشر. أركز على التكوين، الخطوط، الألوان، وإظهار العلامة التجارية بصورة احترافية.</p>
+      <div class="tags">
+        <span class="tag"><strong>01</strong> Branding</span>
+        <span class="tag"><strong>02</strong> Advertising</span>
+        <span class="tag"><strong>03</strong> Social Media</span>
+        <span class="tag"><strong>04</strong> Signage</span>
+        <span class="tag"><strong>05</strong> Print</span>
+      </div>
     </div>
     <div class="card">
-      <strong>مجالات العمل</strong>
-      <div class="skills">
-        <span class="skill">Branding</span><span class="skill">Advertising</span>
-        <span class="skill">Social Media</span><span class="skill">Signage</span>
-        <span class="skill">3D Letters</span><span class="skill">Print Design</span>
-        <span class="skill">Photoshop</span><span class="skill">CorelDRAW</span>
-      </div>
+      <div class="section-kicker">DESIGN TOOLKIT</div>
+      <h3>أدوات ومجالات العمل</h3>
+      <p>Photoshop • CorelDRAW • 3D & Signage • Visual Composition • Print Production</p>
     </div>
   </div>
 </div>
 </section>
 
-<section id="work">
+<section class="section" id="services">
 <div class="container">
-  <div class="section-head"><div><div class="en">SELECTED WORK</div><h2>أعمال مختارة</h2></div><div class="gold">01 — 07</div></div>
+  <div class="section-head"><div><div class="section-kicker">02 / SERVICES</div><h2>شنو أقدر أقدملك؟</h2></div></div>
+  <div class="services">
+    <div class="service"><div class="num">01</div><h3>هوية بصرية</h3><p>شعار، ألوان، خطوط ونظام بصري متكامل للعلامة.</p></div>
+    <div class="service"><div class="num">02</div><h3>إعلانات</h3><p>بوسترات وحملات إعلانية مصممة للفت الانتباه.</p></div>
+    <div class="service"><div class="num">03</div><h3>سوشيال ميديا</h3><p>منشورات وإعلانات رقمية بمظهر متناسق واحترافي.</p></div>
+    <div class="service"><div class="num">04</div><h3>لافتات وواجهات</h3><p>تصاميم 3D وحروف مضيئة وواجهات تجارية جاهزة للتنفيذ.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="work">
+<div class="container">
+  <div class="section-head">
+    <div><div class="section-kicker">03 / SELECTED WORK</div><h2>أعمال مختارة</h2></div>
+    <div class="counter">07 PROJECTS</div>
+  </div>
+  <div class="filters">
+    <button class="filter active" data-filter="all">الكل</button>
+    <button class="filter" data-filter="advertising">إعلانات</button>
+    <button class="filter" data-filter="signage">لافتات</button>
+    <button class="filter" data-filter="creative">إبداعي</button>
+  </div>
+
   <div class="projects">
-    <article class="project"><img src="project-01.jpg" alt="Project 01"><div class="project-info"><div class="project-num">01</div><h3>تصميم إعلانات ومحتوى إبداعي</h3><p>تصميمات إعلانية وحملات بصرية للسوشيال ميديا.</p></div></article>
-    <article class="project"><img src="project-02.jpg" alt="Project 02"><div class="project-info"><div class="project-num">02</div><h3>تصميم وهوية بصرية</h3><p>حلول بصرية تجمع بين الفكرة والهوية التجارية.</p></div></article>
-    <article class="project"><img src="project-03.jpg" alt="Project 03"><div class="project-info"><div class="project-num">03</div><h3>إعلانات منتجات</h3><p>معالجة وتركيب صور المنتجات بأسلوب إعلاني احترافي.</p></div></article>
-    <article class="project"><img src="project-04.jpg" alt="Project 04"><div class="project-info"><div class="project-num">04</div><h3>تصميمات إبداعية</h3><p>تصاميم تعتمد على الفكرة البصرية والتكوين الجذاب.</p></div></article>
-    <article class="project"><img src="project-05.jpg" alt="Project 05"><div class="project-info"><div class="project-num">05</div><h3>لافتات وواجهات تجارية</h3><p>تصميم واجهات ولافتات مضيئة للمشاريع المحلية.</p></div></article>
-    <article class="project"><img src="project-06.jpg" alt="Project 06"><div class="project-info"><div class="project-num">06</div><h3>3D & LED Signage</h3><p>تصاميم حروف بارزة وإضاءة LED للاستخدام الخارجي.</p></div></article>
-    <article class="project"><img src="project-07.jpg" alt="Project 07"><div class="project-info"><div class="project-num">07</div><h3>تصميم إعلاني متكامل</h3><p>فكرة، معالجة، إخراج بصري وتجهيز للتنفيذ.</p></div></article>
+    <article class="project" data-cat="creative" data-title="إعلان إبداعي — حيوانات وشخصيات" data-desc="تصميم إعلاني يعتمد على الدمج البصري والشخصية الكرتونية." data-img="project-01.jpg">
+      <div class="project-img"><img src="project-01.jpg" alt="إعلان إبداعي"></div>
+      <div class="project-info"><div class="project-meta"><span>01</span><span>CREATIVE</span></div><h3>إعلان إبداعي</h3><p>فكرة بصرية + معالجة صور + تكوين إعلاني.</p></div>
+    </article>
+
+    <article class="project" data-cat="signage" data-title="تصميم واجهة ولافتة مضيئة" data-desc="تطبيق هوية تجارية على واجهة محل مع حروف وإضاءة." data-img="project-02.jpg">
+      <div class="project-img"><img src="project-02.jpg" alt="لافتة مضيئة"></div>
+      <div class="project-info"><div class="project-meta"><span>02</span><span>SIGNAGE</span></div><h3>واجهة ولافتة مضيئة</h3><p>تصميم تجاري مخصص للواجهة والتنفيذ.</p></div>
+    </article>
+
+    <article class="project" data-cat="advertising" data-title="حملة إعلانية لمنتج" data-desc="تصوير/تركيب منتج مع خلفية إعلانية وإضاءة سينمائية." data-img="project-03.jpg">
+      <div class="project-img"><img src="project-03.jpg" alt="إعلان منتج"></div>
+      <div class="project-info"><div class="project-meta"><span>03</span><span>ADVERTISING</span></div><h3>إعلان منتج</h3><p>تركيب بصري وإخراج إعلاني للمنتج.</p></div>
+    </article>
+
+    <article class="project" data-cat="advertising" data-title="تصميم إعلاني — عيادة وخدمات" data-desc="إعلان خدمي يعتمد على شخصية بصرية واضحة ورسالة مباشرة." data-img="project-04.jpg">
+      <div class="project-img"><img src="project-04.jpg" alt="إعلان خدمي"></div>
+      <div class="project-info"><div class="project-meta"><span>04</span><span>ADVERTISING</span></div><h3>إعلان خدمي</h3><p>رسالة واضحة + شخصية بصرية + إخراج نظيف.</p></div>
+    </article>
+
+    <article class="project" data-cat="signage" data-title="مطعم — هوية واجهة" data-desc="تصميم لافتة واجهة مطعم بحروف بارزة وإضاءة ليلية." data-img="project-05.jpg">
+      <div class="project-img"><img src="project-05.jpg" alt="واجهة مطعم"></div>
+      <div class="project-info"><div class="project-meta"><span>05</span><span>SIGNAGE</span></div><h3>واجهة مطعم</h3><p>هوية واجهة + حروف بارزة + إضاءة.</p></div>
+    </article>
+
+    <article class="project" data-cat="signage" data-title="حروف بارزة وإضاءة LED" data-desc="تصميم وتنفيذ بصري للحروف البارزة والإنارة المحيطية." data-img="project-06.jpg">
+      <div class="project-img"><img src="project-06.jpg" alt="حروف بارزة LED"></div>
+      <div class="project-info"><div class="project-meta"><span>06</span><span>SIGNAGE</span></div><h3>3D Letters & LED</h3><p>حروف بارزة بتفاصيل مناسبة للتنفيذ الليلي.</p></div>
+    </article>
+
+    <article class="project" data-cat="creative" data-title="تصميم بصري — شخصية وهوية" data-desc="تصميم شخصية بصرية وهوية شخصية لمصمم جرافيك." data-img="project-07.jpg">
+      <div class="project-img"><img src="project-07.jpg" alt="هوية شخصية"></div>
+      <div class="project-info"><div class="project-meta"><span>07</span><span>CREATIVE</span></div><h3>هوية شخصية</h3><p>Portrait branding + graphic composition.</p></div>
+    </article>
   </div>
 </div>
 </section>
 
-<section id="cv">
+<section class="section">
 <div class="container">
-  <div class="section-head"><div><div class="en">DIGITAL CV</div><h2>السيرة المهنية</h2></div></div>
-  <div class="card">
-    <div class="qr-wrap">
-      <div>
-        <h3 style="margin-top:0">كاظم نجم جابر</h3>
-        <p>Graphic Designer — Basra, Iraq</p>
-        <p>تصميم الهوية البصرية • الإعلانات • اللافتات • السوشيال ميديا • المطبوعات</p>
-        <div class="cta">
-          <a class="btn primary" href="tel:+9647765059115">تواصل معي</a>
-          <a class="btn" href="https://wa.me/9647765059115" target="_blank">WhatsApp</a>
-        </div>
+  <div class="section-head"><div><div class="section-kicker">04 / PROCESS</div><h2>طريقة العمل</h2></div></div>
+  <div class="process">
+    <div class="step"><strong>01</strong><h3>الفكرة</h3><p>نفهم المشروع، الجمهور والهدف قبل التصميم.</p></div>
+    <div class="step"><strong>02</strong><h3>الاتجاه البصري</h3><p>نحدد الألوان، الخطوط والأسلوب المناسب.</p></div>
+    <div class="step"><strong>03</strong><h3>التصميم</h3><p>تنفيذ الفكرة ومعالجة التفاصيل والإخراج.</p></div>
+    <div class="step"><strong>04</strong><h3>التسليم</h3><p>ملفات جاهزة للنشر أو الطباعة أو التنفيذ.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="cv">
+<div class="container">
+  <div class="section-head"><div><div class="section-kicker">05 / DIGITAL CV</div><h2>السيرة والبطاقة الرقمية</h2></div></div>
+  <div class="card cv">
+    <div>
+      <h3 style="font-size:25px;margin-top:0">كاظم نجم جابر</h3>
+      <p>Graphic Designer — Basra, Iraq</p>
+      <div class="cv-points">
+        <div class="cv-point"><b>التخصص</b>Graphic Design</div>
+        <div class="cv-point"><b>الموقع</b>Basra, Iraq</div>
+        <div class="cv-point"><b>الهاتف</b>07765059115</div>
+        <div class="cv-point"><b>مجالاتي</b>Branding • Advertising • Signage</div>
       </div>
-      <div class="qr"><img src="qr.png" alt="QR Code"></div>
+      <div class="actions">
+        <a class="btn primary" href="https://wa.me/9647765059115" target="_blank">راسلني على واتساب</a>
+        <button class="btn" onclick="window.print()">حفظ PDF</button>
+      </div>
     </div>
+    <div class="qr"><img src="qr.png" alt="QR Code"></div>
   </div>
 </div>
 </section>
 
-<section id="contact">
+<section class="section" id="contact">
 <div class="container">
-  <div class="section-head"><div><div class="en">CONTACT</div><h2>تواصل معي</h2></div></div>
-  <div class="contact-grid">
-    <div class="contact-box">
+  <div class="section-head"><div><div class="section-kicker">06 / CONTACT</div><h2>خلينا نشتغل على مشروعك.</h2></div></div>
+  <div class="contact">
+    <div class="contact-list">
       <a class="contact-line" href="tel:+9647765059115"><span class="icon">☎</span><span><small>الهاتف</small><br><b>07765059115</b></span></a>
-      <a class="contact-line" href="https://wa.me/9647765059115" target="_blank"><span class="icon">W</span><span><small>واتساب</small><br><b>راسلني مباشرة</b></span></a>
+      <a class="contact-line" href="https://wa.me/9647765059115" target="_blank"><span class="icon">W</span><span><small>واتساب</small><br><b>محادثة مباشرة</b></span></a>
       <div class="contact-line"><span class="icon">⌖</span><span><small>الموقع</small><br><b>البصرة — العراق</b></span></div>
     </div>
     <div class="card">
-      <h3 style="margin-top:0">هل لديك مشروع؟</h3>
-      <p>أرسل فكرة المشروع أو تفاصيله، وسأساعدك في تحويلها إلى تصميم احترافي قابل للتنفيذ.</p>
-      <div class="cta"><a class="btn primary" href="https://wa.me/9647765059115" target="_blank">ابدأ المحادثة</a></div>
+      <div class="section-kicker">LET'S CREATE</div>
+      <h3 style="font-size:24px;margin:8px 0">عندك فكرة؟ خلّي التصميم عليّ.</h3>
+      <p>أرسل تفاصيل المشروع، ونحوّل الفكرة إلى نتيجة بصرية مرتبة وقابلة للتنفيذ.</p>
+      <div class="actions"><a class="btn primary" href="https://wa.me/9647765059115" target="_blank">ابدأ الآن ↗</a></div>
     </div>
   </div>
 </div>
 </section>
 </main>
 
-<footer>
-  <div class="container">© <span id="year"></span> <span class="gold">Kazem Najam Jaber</span> — Graphic Designer • Basra, Iraq</div>
-</footer>
+<footer>© <span id="year"></span> <span>Kazem Najam Jaber</span> — Graphic Designer • Basra, Iraq</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" id="close">×</button>
+    <img id="modalImg" src="" alt="">
+    <div class="modal-title"><h3 id="modalTitle"></h3><p id="modalDesc"></p></div>
+  </div>
+</div>
 
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
 
-const btn=document.getElementById('langBtn');
-let english=false;
-btn.addEventListener('click',()=>{
-  english=!english;
-  if(english){
-    document.documentElement.lang='en';
-    document.documentElement.dir='ltr';
-    btn.textContent='AR';
-    document.querySelector('h2').textContent='Graphic Designer — Basra, Iraq';
-    document.querySelector('.kicker').textContent='PERSONAL PORTFOLIO';
-  }else{
-    document.documentElement.lang='ar';
-    document.documentElement.dir='rtl';
-    btn.textContent='EN';
-    document.querySelector('h2').textContent='مصمم جرافيك — البصرة، العراق';
-    document.querySelector('.kicker').textContent='ملف أعمال شخصي';
-  }
-});
+const filters=document.querySelectorAll('.filter');
+const projects=document.querySelectorAll('.project');
+filters.forEach(f=>f.addEventListener('click',()=>{
+  filters.forEach(x=>x.classList.remove('active'));f.classList.add('active');
+  const cat=f.dataset.filter;
+  projects.forEach(p=>p.classList.toggle('hide',cat!=='all' && p.dataset.cat!==cat));
+}));
+
+const modal=document.getElementById('modal');
+const modalImg=document.getElementById('modalImg');
+const modalTitle=document.getElementById('modalTitle');
+const modalDesc=document.getElementById('modalDesc');
+projects.forEach(p=>p.addEventListener('click',()=>{
+  modalImg.src=p.dataset.img;modalImg.alt=p.dataset.title;
+  modalTitle.textContent=p.dataset.title;modalDesc.textContent=p.dataset.desc;
+  modal.classList.add('show');document.body.style.overflow='hidden';
+}));
+function closeModal(){modal.classList.remove('show');document.body.style.overflow=''}
+document.getElementById('close').onclick=closeModal;
+modal.onclick=e=>{if(e.target===modal)closeModal()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+document.getElementById('langBtn').onclick=()=>{
+  alert('النسخة الإنجليزية الكاملة نضيفها بالمرحلة التالية حتى تكون الترجمة دقيقة لكل أقسام الموقع.');
+};
 </script>
 </body>
 </html>
