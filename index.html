@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#050a14">
-<title>Kazem Najam — Graphic Designer</title>
+<title>Kazem Najam — Graphic Designer | Portfolio</title>
 <style>
 :root{
   --bg:#030811;--bg2:#071426;--card:#09182b;--line:#17385c;
@@ -219,6 +219,17 @@ to{transform:translate3d(-70px,55px,0) scale(1.2)}}
   .viewer img{max-height:68vh}
 }
 </style>
+
+<style>
+/* V4 additions */
+#light-advertising .grid{align-items:stretch}
+#light-advertising .project{min-height:100%}
+#light-advertising .cover{aspect-ratio:1.25}
+#light-advertising .cover img{object-fit:cover}
+@media(max-width:520px){
+  #light-advertising .cover{aspect-ratio:1.18}
+}
+</style>
 </head>
 <body>
 <div class="ambient ambient-a"></div>
@@ -232,6 +243,7 @@ to{transform:translate3d(-70px,55px,0) scale(1.2)}}
   <div class="links">
     <a href="#home">الرئيسية</a>
     <a href="#works">أعمالي</a>
+    <a href="#light-advertising">الإعلانات</a>
     <a href="#about">عني</a>
     <a href="#contact">تواصل</a>
   </div>
@@ -335,6 +347,41 @@ to{transform:translate3d(-70px,55px,0) scale(1.2)}}
       </div>
     </article>
 
+  </div>
+</section>
+
+
+<section class="section reveal" id="light-advertising">
+  <div class="head">
+    <small>LIGHTING &amp; SIGNAGE</small>
+    <h2>الإعلانات الضوئية</h2>
+    <p>نماذج من تنفيذ وتصوير الإعلانات والواجهات المضيئة.</p>
+  </div>
+  <div class="grid">
+    <article class="project reveal"
+      data-title="الإعلانات الضوئية — معرض الأعمال"
+      data-images="signage-01.webp,signage-02.webp,signage-03.webp,signage-04.webp,signage-05.webp,signage-06.webp,signage-07.webp,signage-08.webp,signage-09.webp,signage-10.webp,signage-11.webp">
+      <div class="cover">
+        <img src="signage-01.webp" alt="إعلانات ضوئية" loading="lazy" decoding="async">
+      </div>
+      <div class="info">
+        <h3>الإعلانات الضوئية</h3>
+        <p>واجهات • حروف مضيئة • تنفيذ ميداني</p>
+        <span class="count">11 صورة</span>
+      </div>
+    </article>
+    <article class="project reveal"
+      data-title="تصاميم السوشيال — معرض الأعمال"
+      data-images="signage-12.webp,signage-13.webp">
+      <div class="cover">
+        <img src="signage-12.webp" alt="تصاميم سوشيال ميديا" loading="lazy" decoding="async">
+      </div>
+      <div class="info">
+        <h3>تصاميم السوشيال</h3>
+        <p>بوستات • إعلانات • محتوى بصري</p>
+        <span class="count">2 تصاميم</span>
+      </div>
+    </article>
   </div>
 </section>
 
